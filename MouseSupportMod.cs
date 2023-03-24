@@ -81,7 +81,7 @@ namespace Marioalexsan.GrindeaMouseSupport
             foreach (var (init, _) in _initCleanupList)
                 init?.Invoke();
 
-            CreateCommands().AutoAddModCommands();
+            CreateCommands().AutoAddModCommands("Mouse");
         }
 
         public override void Unload()
